@@ -1,0 +1,74 @@
+# See https://help.github.com/articles/dealing-with-line-endings
+# Set default behaviour, in case users don't have core.autocrlf set.
+* text=input
+# Explicitly declare text files we want to always be normalized and converted 
+# to native line endings on checkout.
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.toml text eol=lf
+*.go text eol=lf
+*.rs text eol=lf
+*.txt text eol=lf
+*.lock text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.jsx text eol=lf
+*.tsx text eol=lf
+*.xml text eol=lf
+*.json text eol=lf
+*.gradle text eol=lf
+*.config text eol=lf
+*.properties text eol=lf
+*.pbxproj text eol=lf
+*.plist text eol=lf
+*.lock text eol=lf
+*.sql text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.md text eol=lf
+*.clj text eol=lf
+*.java text eol=lf
+*.scala text eol=lf
+*.build text eol=lf
+*.sbt text eol=lf
+*.in text eol=lf
+*.ac text eol=lf
+*.sh text eol=lf
+Makefile text eol=lf
+targets.make text eol=lf
+install-sh text eol=lf
+# Custom for Visual Studio
+*.cs     text diff=csharp
+*.fs     text
+*.fsx    text
+*.csproj text merge=union
+*.vbproj text merge=union
+*.fsproj text merge=union
+*.dbproj text merge=union
+*.sqlproj text merge=union
+# always has CRLF line ending on checkout
+*.sln    text eol=crlf merge=union 
+*.xaml   text
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+*.gif binary
+*.jar binary
+*.ico binary
+# Standard to msysgit
+*.doc   diff=astextplain
+*.DOC	diff=astextplain
+*.docx  diff=astextplain
+*.DOCX  diff=astextplain
+*.dot   diff=astextplain
+*.DOT   diff=astextplain
+*.pdf   diff=astextplain
+*.PDF   diff=astextplain
+*.rtf   diff=astextplain
+*.RTF   diff=astextplain
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+*.xlsb filter=lfs diff=lfs merge=lfs -text
+*.xlsm filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
